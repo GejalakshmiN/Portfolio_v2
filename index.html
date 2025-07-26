@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <div class="theme-toggle" onclick="toggleTheme()" id="themeToggle">
+        ☀️
+    </div>
+
+    <div class="container" id="home">
+        <div class="greeting">Hi, I'm</div>
+        <h1 class="name">Gejalakshmi N</h1>
+        <p class="title">Software Developer</p>
+        
+        <nav class="nav">
+            <a href="#" class="nav-link" onclick="showSection('skills')">Skills</a>
+            <a href="#" class="nav-link" onclick="showSection('projects')">Projects</a>
+            <a href="#" class="nav-link" onclick="showSection('about')">About</a>
+        </nav>
+        
+        <div class="social-links">
+            <a href="https://github.com/GejalakshmiN" class="social-link"><i class="fa-brands fa-github" style="font-size: 30px;"></i></a>
+            <a href="https://www.linkedin.com/in/gejalakshmi-n-202269304/" class="social-link">
+             <i class="fa-brands fa-linkedin" style="font-size: 30px;"></i>
+            </a>
+             <a href="https://leetcode.com/gejalakshminehru" class="social-link">
+            <i class="fa-solid fa-code" style="font-size: 30px;"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="page-section" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-content">
+            <div class="skills-category">
+                <h3>Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🌐</div>
+                        <h4>HTML/CSS</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">⚛️</div>
+                        <h4>React</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📱</div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Backend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🟢</div>
+                        <h4>FastAPI</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🐍</div>
+                        <h4>Python</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🗃️</div>
+                        <h4>MongoDB</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🔧</div>
+                        <h4>Git/GitHub</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-code" style="font-size: 30px;"></i></div>
+                        <h4>VSCode</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🟢</div>
+                        <h4>Jupyter Notebook</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-section" id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title">Online Examination System</h3>
+                <p class="project-description">
+                    An online examination system that enables students to take tests, receive instant grading, and securely manages all academic records.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">FastAPI</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/ecommerce-platform" target="_blank" class="github-link">
+                        <span class="github-icon">📂</span> View on GitHub
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3 class="project-title">Portfolio</h3>
+                <p class="project-description">
+                   Created a personal website to showcase my projects, skills, achievements, and provide an easy way to connect with me.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/task-management-app" target="_blank" class="github-link">
+                        <span class="github-icon">📂</span> View on GitHub
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <h3 class="project-title">Reminder App</h3>
+                <p class="project-description">
+                    Built a reminder-based app to help users stay on track with their study schedule through timely alerts, progress tracking, and revision streaks.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/weather-dashboard" target="_blank" class="github-link">
+                        <span class="github-icon">📂</span> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-section">
+                <h3>Introduction</h3>
+                <p>
+                    I'm a passionate Full Stack Developer with a love for creating innovative web applications and solving complex problems. With experience in both frontend and backend technologies, I enjoy building end-to-end solutions that make a difference.
+                </p>
+            </div>
+            
+            <div class="about-section">
+                <h3>Background</h3>
+                <p>
+                    I come from a strong computer science background and have hands-on experience in web development. I'm passionate about building efficient and user-friendly applications, and I continuously expand my skill set by exploring emerging technologies and keeping up with modern development practices.
+                </p>
+            </div>
+            
+            <div class="about-section">
+                <h3>Skills & Technologies</h3>
+                <div class="skills-list">
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">React</div>
+                    <div class="skill-item">C++</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">MongoDB</div>
+                    <div class="skill-item">MySQL</div>
+                    <div class="skill-item">Java</div>
+                    <div class="skill-item">HTML & CSS</div>
+                </div>
+            </div>
+            
+            <div class="about-section">
+                <h3>Education</h3>
+                <p>
+                    Bachelor's Degree in Computer Science<br>
+                    Shiv Nadar University Chennai<br><br>
+                </p>
+            </div>
+            
+            <div class="about-section">
+                <h3>Contact</h3>
+                <p>
+                    📧 gejalakshminehru@gmail.com<br>
+                    📍 Chennai, India<br>
+                     <a href="https://www.linkedin.com/in/gejalakshmi-n-202269304/" class="social-link">
+                      <i class="fa-brands fa-linkedin" style="font-size: 30px;"></i>
+                    </a>
+                    <br>
+                    <a href="https://github.com/GejalakshmiN" class="social-link"><i class="fa-brands fa-github" style="font-size: 30px;"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-btn" onclick="showHome()">← Back to Home</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
